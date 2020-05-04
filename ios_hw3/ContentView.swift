@@ -7,13 +7,14 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct ContentView: View {
     @State private var selectDate = Date()
     @State private var mvpViewer = false
     @State private var valueOfClap = 0
     @State private var showAlert = true
-
+    let player = AVPlayer()
 
     let today = Date()
     let startDate = Calendar.current.date(byAdding: .year, value: -3, to: Date())!
@@ -53,10 +54,15 @@ struct ContentView: View {
                 }
             .navigationBarTitle("超級籃球聯賽")
             }
-            
-        
+        }
+        .onAppear {
+                let fileUrl = Bundle.main.url(forResource: "music", withExtension: "mp4")!
+                let playerItem = AVPlayerItem(url: fileUrl)
+                self.player.replaceCurrentItem(with: playerItem)
+                self.player.play()
         }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

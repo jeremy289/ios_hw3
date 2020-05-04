@@ -10,11 +10,10 @@ import SwiftUI
 
 struct Feedback: View {
     @State var name=""
-    @State var selectChamp=0
+    @State var selectChamp="台灣啤酒"
     @State var Point=0.0
     @State var showAlert=false
-    @State var champ=""
-    let champs = ["台灣啤酒","富邦勇士","桃園璞園","台北達欣","裕隆納智捷"]
+    @State var champs = ["台灣啤酒","富邦勇士","桃園璞園","台北達欣","裕隆納智捷"]
     var body: some View {
        VStack
         {
@@ -38,7 +37,7 @@ struct Feedback: View {
                 //offset(x:100,y:0)
                 .alert(isPresented: $showAlert) { () -> Alert in
                 let result: String
-                    result = self.name+"最愛的隊伍:"+champs[self.selectChamp]
+                    result = self.name+"最愛的隊伍:"+self.selectChamp
                         return Alert(title: Text(result))
                 }
             

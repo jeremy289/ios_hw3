@@ -14,6 +14,7 @@
 		53484A23245FF76A0058A07D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53484A22245FF76A0058A07D /* Preview Assets.xcassets */; };
 		53484A26245FF76A0058A07D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53484A24245FF76A0058A07D /* LaunchScreen.storyboard */; };
 		53484A2E245FF8670058A07D /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53484A2D245FF8670058A07D /* Feedback.swift */; };
+		53484A30245FFE820058A07D /* music.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 53484A2F245FFE810058A07D /* music.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		53484A25245FF76A0058A07D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53484A27245FF76A0058A07D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53484A2D245FF8670058A07D /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
+		53484A2F245FFE810058A07D /* music.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = music.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				53484A2D245FF8670058A07D /* Feedback.swift */,
 				53484A1F245FF76A0058A07D /* Assets.xcassets */,
 				53484A24245FF76A0058A07D /* LaunchScreen.storyboard */,
+				53484A2F245FFE810058A07D /* music.mp4 */,
 				53484A27245FF76A0058A07D /* Info.plist */,
 				53484A21245FF76A0058A07D /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53484A26245FF76A0058A07D /* LaunchScreen.storyboard in Resources */,
+				53484A30245FFE820058A07D /* music.mp4 in Resources */,
 				53484A23245FF76A0058A07D /* Preview Assets.xcassets in Resources */,
 				53484A20245FF76A0058A07D /* Assets.xcassets in Resources */,
 			);
